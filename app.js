@@ -2,7 +2,12 @@ const express = require("express");
 const app = express();
 const port = process.env.PORT || 3001;
 
+
 app.get("/", (req, res) => {
+  res.type('html').send(html);
+});
+
+app.get("/main", (req, res) => {
   console.info("CONSOLE.INFO");
   console.log("CONSOLE.LOG");
   console.error("CONSOLE.ERROR");
